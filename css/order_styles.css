@@ -1,0 +1,57 @@
+/* Обновленные стили для полей ввода */
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    border: none; /* Убираем границу */
+    background: transparent; /* Делаем фон прозрачным */
+    color: white; /* Цвет текста */
+    border-radius: 0; /* Убираем скругления у границы */
+}
+
+.form-group label {
+    color: white; /* Цвет текста метки */
+    font-weight: bold;
+}
+
+button.btn-primary {
+    background-color: #f5f5f5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn-primary:hover {
+    background-color: #f5f5f5;
+}
+
+button.btn-outline-danger a {
+    color: black;
+    text-decoration: none;
+}
+.form-group {
+    display: inline-block;
+    margin-right: 3px;
+}
+.forms-container {
+    background-color: #222;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 700px;
+}
+.forms img {
+    grid-column: 2;
+}
+
+.float-right {
+    float: right;
+}
+.enlarged-image {
+    float: right;
+    width: 565px;
+    height: 385px;
+    transform: translateY(-50%);
+}

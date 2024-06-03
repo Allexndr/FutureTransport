@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/docstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/order_styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get references to form elements
+            var nameInput = document.getElementById("name");
+            var phoneInput = document.getElementById("phone");
+            var emailInput = document.getElementById("email");
+            var fromInput = document.getElementById("from");
+            var toInput = document.getElementById("to");
+            var weightInput = document.getElementById("weight");
+            var sizeInput = document.getElementById("size");
+            var quantityInput = document.getElementById("quantity");
+            var sendOrderButton = document.getElementById("sendOrderButton");
+
+            // Function to check if all fields are filled
+            function areAllFieldsFilled() {
+                return (
+                    nameInput.value !== "" &&
+                    phoneInput.value !== "" &&
+                    emailInput.value !== "" &&
+                    fromInput.value !== "" &&
+                    toInput.value !== "" &&
+                    weightInput.value !== "" &&
+                    sizeInput.value !== "" &&
+                    quantityInput.value !== ""
+                );
+            }
+
+            // Function to enable or disable the "Send the order" button based on form validation
+            function updateSendOrderButton() {
+                sendOrderButton.disabled = !areAllFieldsFilled();
+            }
+
+            // Attach event listeners to form fields
+            nameInput.addEventListener("input", updateSendOrderButton);
+            phoneInput.addEventListener("input", updateSendOrderButton);
+            emailInput.addEventListener("input", updateSendOrderButton);
+            fromInput.addEventListener("input", updateSendOrderButton);
+            toInput.addEventListener("input", updateSendOrderButton);
+            weightInput.addEventListener("input", updateSendOrderButton);
+            sizeInput.addEventListener("input", updateSendOrderButton);
+            quantityInput.addEventListener("input", updateSendOrderButton);
+        });
+    </script>
+</head>
+<body class="main">
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4" style="margin-left: -50px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <img src="img/murdas_logo.png" class="fs-4">
+        </a>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="about_us.html" class="nav-link" aria-current="page" style="color: white">About us</a></li>
+            <li class="nav-item"><a href="documents.html" class="nav-link" style="color: white">Documents</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link" style="color: white">Photo</a></li>
+            <li class="nav-item">
+                <a href="order.html" style="text-decoration: none; color: inherit;">
+                    <button type="button" class="btn btn-outline-danger" style="color: white">
+                        Order
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="forms">
+        <h2>Your data</h2>
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Write your name" required>
+        </div>
+        <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Write your phone" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Write your email" required>
+        </div>
+
+        <h2>Choose a route</h2>
+        <div class="form-group">
+            <input type="text" id="from" name="from" placeholder="From where" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="to" name="to" placeholder="To where" required>
+        </div>
+
+        <h2>Characteristics</h2>
+        <div class="form-group">
+            <input type="text" id="weight" name="weight" placeholder="Write weight" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="size" name="size" placeholder="Write size" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="quantity" name="quantity" placeholder="Write quantity" required>
+        </div>
+        <img src="img/order.png" class="enlarged-image">
+
+        <button type="button" class="btn btn-success" id="sendOrderButton" style="margin: 20px auto; display: block;" disabled>
+            Send the order
+        </button>
+    </div>
+</div>
+
+<div class="foot flex" style="position: absolute; bottom: 0; left: 0; width: 100%; padding-top: 50px; padding-right: 150px">
+    <div class="item">
+        <img src="img/murdas_logo_black.png" alt="" style="margin-left: 170px">
+    </div>
+    <div class="item" style="margin-top: 20px">
+        <a href="about_us.html" class="hr">About us</a>
+        <a href="documents.html" class="hr">Documents</a>
+        <a href="gallery.html" class="hr">Photo</a>
+    </div>
+    <div class="item">
+        <div class="boxflex" style="margin-top: 20px">
+            <div class="flexcont"><a href="https://www.instagram.com/sane4.k"><img src="img/Group%20121.png" alt=""></a></div>
+            <div class="flexcont"><a href="https://telegram.me/https://t.me/Allexndr"><img src="img/Group%20131.png" alt=""></a></div>
+            <div class="flexcont"><a href="https://vk.com/sanyamurmyasov"><img src="img/Group%20141.png" alt=""></a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

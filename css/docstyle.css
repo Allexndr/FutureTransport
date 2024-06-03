@@ -1,0 +1,135 @@
+.main{
+    font-family: Monteserrat;
+    background-repeat: no-repeat;
+    background-color: #1E1E1E;
+    background-size: 100%;
+    color: #f5f5f5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.slog{
+    margin-top:70px ;
+    color: #f5f5f5;
+    font-family: Accelerator;
+    font-size:50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.underslog{
+    margin-top: -20px;
+    margin-right:500px ;
+
+    color: #f5f5f5;
+    font-size: 21px;
+}
+@font-face {
+    font-family: Accelerator;
+    src: url("css files/Accelerator-W01.ttf");
+}
+@font-face {
+    font-family: Monteserrat;
+    src: url("css files/Montserrat-Regular.ttf");
+}
+.box {
+    width: 1300px;
+    height: 90px;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.sl{
+    font-family: Accelerator;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.margt{
+    text-align: left;
+}
+.line{
+    border:3px solid #f5f5f5;
+    width: 100px;
+}
+.text{
+    margin-top: 10px;
+}
+
+
+
+.imgtab{
+    margin-top: 20px;
+}
+
+.mainbox{
+    position: relative;
+}
+
+.gal1{
+    margin-right: 24px;
+    height: 465px;
+}
+.gal{
+    margin-top: -16px;
+    height: 278px;
+
+}
+.gal2{
+    height: 160px;
+    margin-bottom: -9px;
+}
+.gal3{
+    height: 160px;
+    margin-bottom: -9px;
+    margin-left: 28px;
+}
+
+.loca{
+    background: url("css files/mdi_location.png") no-repeat left center;
+    padding: 5px 10px 5px 25px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tele{
+    background: url("css files/ri_phone-fill.png") no-repeat left center;
+    padding: 5px 10px 5px 25px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.boxflex{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 1215px;
+}
+
+.foot{
+    margin-top: 60px;
+    width: 100%;
+    height: 141px;
+    background-color: #f5f5f5;
+}
+
+.hr{
+    text-decoration: none;
+    color: black;
+}
+.hr:hover{
+    color: black;
+}
+.hr:active{
+    color: black;
+}
+.hr:visited{
+    color: black;
+
+}
