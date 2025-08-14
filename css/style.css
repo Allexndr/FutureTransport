@@ -1,0 +1,382 @@
+.main{
+    font-family: Monteserrat;
+    background-image: url("css files/Rectangle 4.png");
+    background-repeat: no-repeat;
+    background-color: #1E1E1E;
+    background-size: 100%;
+    color:white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.slog{
+    margin-top:70px ;
+    color: white;
+    font-family: Accelerator;
+    font-size:50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.underslog{
+    margin-top: -20px;
+    margin-right:500px ;
+
+    color: white;
+    font-size: 21px;
+}
+.marg{
+    text-align: left;
+    margin-left:160px;
+}
+@font-face {
+    font-family: Accelerator;
+    src: url("css files/Accelerator-W01.ttf");
+}
+@font-face {
+    font-family: Monteserrat;
+    src: url("css files/Montserrat-Regular.ttf");
+}
+.box {
+    margin-top: 100px;
+    margin-right:115px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxone{
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 269px;
+    padding: 30px;
+    border-radius: 11px;
+}
+
+.sl{
+    font-family: Accelerator;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.boxtwo{
+    width: 367px;
+    height: 269px;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 11px;
+
+}
+.boxthree{
+    width: 367px;
+    height: 269px;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 11px;
+
+}
+.margt{
+    text-align: left;
+}
+.line{
+    border:3px solid red;
+    width: 100px;
+}
+.text{
+    margin-top: 10px;
+}
+
+
+
+.imgtab{
+    margin-top: 20px;
+}
+
+.mainbox{
+    position: relative;
+}
+
+.gal1{
+    margin-right: 24px;
+    height: 465px;
+}
+.gal{
+    margin-top: -16px;
+    height: 278px;
+
+}
+.gal2{
+    height: 160px;
+    margin-bottom: -9px;
+}
+.gal3{
+    height: 160px;
+    margin-bottom: -9px;
+    margin-left: 28px;
+}
+
+.loca{
+    background: url("css files/mdi_location.png") no-repeat left center;
+    padding: 5px 10px 5px 25px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tele{
+    background: url("css files/ri_phone-fill.png") no-repeat left center;
+    padding: 5px 10px 5px 25px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.boxflex{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 1215px;
+}
+
+.foot{
+    margin-top: 60px;
+    width: 100%;
+    height: 141px;
+    background-color: red;
+}
+
+.hr{
+    text-decoration: none;
+    color: black;
+}
+.hr:hover{
+    color: black;
+}
+.hr:active{
+    color: black;
+}
+.hr:visited{
+    color: black;
+
+}
+
+.textal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxone:hover{
+    animation-name:hovin1 ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxone:hover .line{
+    animation-name:hovinl ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxone:not(:hover){
+    animation-name:hovout1 ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxone:not(:hover) .line{
+    animation-name:hovoutl ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+.boxtwo:hover{
+    animation-name:hovin2 ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxtwo:hover .line{
+    animation-name:hovinl ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxtwo:not(:hover){
+    animation-name:hovout2 ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxtwo:not(:hover) .line{
+    animation-name:hovoutl ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+.boxthree:hover{
+    animation-name:hovin3 ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxthree:hover .line{
+    animation-name:hovinl ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxthree:not(:hover){
+    animation-name:hovout3 ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.boxthree:not(:hover) .line{
+    animation-name:hovoutl ;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes hovinl {
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        border:3px solid white;
+    }
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        border:3px solid red;
+    }
+
+}
+
+@keyframes hovoutl {
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        border:3px solid red;
+    }
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        border:3px solid white;
+    }
+
+}
+
+@keyframes hovout1{
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle.png");
+    }
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle-1.png");
+    }
+}
+@keyframes hovin1 {
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle.png");
+    }
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle-1.png");
+    }
+}
+
+@keyframes hovout2{
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle 6.png");
+    }
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle6-1.png");
+    }
+}
+@keyframes hovin2 {
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle6-1.png");
+    }
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle 6.png");
+    }
+}
+
+@keyframes hovout3{
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle 7.png");
+    }
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle7-1.png");
+    }
+}
+@keyframes hovin3 {
+    from{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle 7.png");
+    }
+    to{
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+        background-image: url("css files/Rectangle7-1.png");
+    }
+}
+
+
+
+
